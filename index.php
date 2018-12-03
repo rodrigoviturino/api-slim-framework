@@ -15,7 +15,6 @@ $app->get('/pessoas/', function() use ($app){
 // Get Pessoa
 $app->get('/pessoa/:id', function($id) use ($app){
     (new \controllers\Pessoa($app))->get($id);
-echo "tes";
 });
 
 
