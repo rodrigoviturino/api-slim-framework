@@ -7,7 +7,7 @@ $app = new \Slim\Slim(array(
     'templates.path' => 'templates'
 ));
 
-// Listando todas
+// Listando todas pessoas
 $app->get('/pessoas/', function() use ($app){
     (new \controllers\Pessoa($app))->lista();
 });
